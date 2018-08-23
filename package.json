@@ -1,0 +1,12 @@
+{
+    "name": "githubtools",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "create": "node ./createIssues"
+    },
+    "dependencies": {
+        "http-errors": "~1.6.2",
+        "request": "^2.88.0"
+    }
+}
