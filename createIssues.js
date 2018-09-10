@@ -22,9 +22,12 @@ var options = {
 // noinspection JSUnresolvedFunction
 json.forEach(function(item) {
     options.body = item;
-    console.log("Sending issue " + item.id);
     request(options, function(error, response, body) {
         if (error) throw new Error(error);
-        console.log("Status: " + response.statusCode + " New Issue " + body.id);
+        if (response.statusCode === 201) {
+            console.log("Created New Issue " + body.id);
+        } else {
+            console.log("Error Sending Issue " + item.id !== undefined ? item.id : item.title + " Error: " + response.statusCode);
+        }
     });
 });
