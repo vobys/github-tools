@@ -27,7 +27,7 @@ json.forEach(function(item) {
         if (response.statusCode === 201) {
             console.log("Created New Issue " + body.id);
         } else {
-            console.log("Error Sending Issue " + item.id !== undefined ? item.id : item.title + " Error: " + response.statusCode);
+            console.log("Error Sending Issue " + (item.id !== undefined ? item.id : item.title) + " | Error: " + response.statusCode);
         }
     });
 });
