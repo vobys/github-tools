@@ -1,10 +1,10 @@
 # GitHub Tools
 
-Very simple tool made in javascript to batch creation of GitHub issues.
+Very simple tool made in javascript to batch creation of GitHub issues and copy labels from one repo to another.
 
 ## Configure
 
-1. Edit the `createIssues.js` file and enter a valid GitHub token.
+1. Edit the `config.js` file and enter a valid GitHub account.
 1. Edit the `issues.json` file by adding the issues's JSONs to array. For example:
 
 ```json
@@ -37,6 +37,14 @@ For more details see the [GitHub API documentation](https://developer.github.com
 
 ## Usage
 
+To create the issues reported in the `issues.json` file, run the following command:
+
 ```bash
-$ npm run create
+$ npm run createIssues
+```
+
+To copy the labels from one repository (`fromRepo`) to another (`toRepo`), run the following command:
+
+```bash
+$ npm run copyLabels
 ```
