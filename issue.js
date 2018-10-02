@@ -3,14 +3,14 @@ var request = require("request");
 
 var createIssue = function(issue) {
     var options = {
-        method: 'POST',
-        url: 'https://api.github.com/repos/' + config.username + '/' + config.toRepo + '/issues',
+        method: "POST",
+        url: "https://api.github.com/repos/" + config.username + "/" + config.toRepo + "/issues",
         headers:
                 {
-                    'Cache-Control': 'no-cache',
-                    'User-Agent': 'GitHubTools',
-                    Authorization: 'token ' + config.token,
-                    'Content-Type': 'application/json'
+                    "Cache-Control": "no-cache",
+                    "User-Agent": "GitHubTools",
+                    Authorization: "token " + config.token,
+                    "Content-Type": "application/json"
                 },
         body: issue,
         json: true

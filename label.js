@@ -3,15 +3,15 @@ var request = require("request");
 
 var retrieveLabels = function() {
     var options = {
-        method: 'GET',
-        url: 'https://api.github.com/repos/' + config.username + '/' + config.fromRepo + '/labels',
+        method: "GET",
+        url: "https://api.github.com/repos/" + config.username + "/" + config.fromRepo + "/labels",
         headers:
                 {
-                    'Cache-Control': 'no-cache',
-                    'User-Agent': 'GitHubTools',
-                    Accept: 'application/vnd.github.symmetra-preview+json',
-                    Authorization: 'token ' + config.token,
-                    'Content-Type': 'application/json'
+                    "Cache-Control": "no-cache",
+                    "User-Agent": "GitHubTools",
+                    Accept: "application/vnd.github.symmetra-preview+json",
+                    Authorization: "token " + config.token,
+                    "Content-Type": "application/json"
                 },
         json: true
     };
@@ -34,15 +34,15 @@ var retrieveLabels = function() {
 
 var createLabel = function(label) {
     var options = {
-        method: 'POST',
-        url: 'https://api.github.com/repos/' + config.username + '/' + config.toRepo + '/labels',
+        method: "POST",
+        url: "https://api.github.com/repos/" + config.username + "/" + config.toRepo + "/labels",
         headers:
                 {
-                    'Cache-Control': 'no-cache',
-                    'User-Agent': 'GitHubTools',
-                    Accept: 'application/vnd.github.symmetra-preview+json',
-                    Authorization: 'token ' + config.token,
-                    'Content-Type': 'application/json'
+                    "Cache-Control": "no-cache",
+                    "User-Agent": "GitHubTools",
+                    Accept: "application/vnd.github.symmetra-preview+json",
+                    Authorization: "token " + config.token,
+                    "Content-Type": "application/json"
                 },
         body: label,
         json: true
