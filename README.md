@@ -4,8 +4,8 @@ Very simple tool made in javascript to batch creation of GitHub issues and copy 
 
 ## Configure
 
- 1. Edit the `config.js` file and enter a valid GitHub account.
- 2. Edit the `issues.json` file by adding the issues's JSONs to array. For example:
+1.  Edit the `config.js` file and enter a valid GitHub account.
+2.  Edit the `issues.json` file by adding the issues's JSONs to array. For example:
 
 ```json
 [
