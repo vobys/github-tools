@@ -1,4 +1,4 @@
-# GitHub Tools [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96c93ff943a64cd4ae4ae7d031646272)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vobys/github-tools&amp;utm_campaign=Badge_Grade)
+# GitHub Tools
 
 Very simple tool made in javascript to batch creation of GitHub issues and copy labels from one repo to another.
 
