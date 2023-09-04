@@ -48,3 +48,9 @@ To copy the labels from one repository (`fromRepo`) to another (`toRepo`), run t
 ```bash
 $ npm run copyLabels
 ```
+
+To move the cards from one column (`fromCol`) to another (`toCol`), run the following command:
+
+```bash
+$ npm run moveCards
+```

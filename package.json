@@ -5,6 +5,7 @@
   "scripts": {
     "createIssues": "node ./createIssues",
     "copyLabels": "node ./copyLabels",
+    "moveCards": "node ./moveCards",
     "pretest": "eslint .",
     "test": "jest"
   },
