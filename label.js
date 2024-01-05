@@ -9,7 +9,7 @@ const retrieveLabels = function() {
       config.username +
       "/" +
       config.fromRepo +
-      "/labels",
+      "/labels?per_page=100",
     headers: {
       "Cache-Control": "no-cache",
       "User-Agent": "GitHubTools",
