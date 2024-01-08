@@ -1,14 +1,14 @@
-const token = "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";
-const username = "vobys";
+const token = "TOKEN";
+const username = "USERNAME";
 
-const fromRepo = "vobys-folha-spring-boot";
-const toRepo = "vobys-ponto-backend";
+const fromRepo = "FROM_REPO";
+const toRepo = "TO_REPO";
 
-const fromCol = 5308413;
-const toCol = 5308415;
+const fromCol = 0;
+const toCol = 0;
 
-const fromAnotherCol = 19188230;
-const toAnotherCol = 19188566;
+const fromAnotherCol = 0;
+const toAnotherCol = 0;
 
 exports.token = token;
 exports.username = username;
