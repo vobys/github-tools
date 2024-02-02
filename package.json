@@ -6,6 +6,7 @@
     "createIssues": "node ./createIssues",
     "copyLabels": "node ./copyLabels",
     "moveCards": "node ./moveCards",
+    "moveProjectsCards": "node ./moveProjectsCards",
     "pretest": "eslint .",
     "test": "jest"
   },
